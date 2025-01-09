@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>login page</title>
+    <script>
+      function clickk(){
+        const Username = document.getElementById("Username").value;
+        const Password =document.getElementById("Password").value;
+      if (Password == varun && Username == varun12){
+        document.getElementById("message").textContent = "Login successful";
+                document.getElementById("message").style.color = "green";
+
+      }
+      else {
+        document.getElementById("message").textContent = "Invalid username or password";
+                document.getElementById("message").style.color = "red";
+
+      }
+      }
+    </script>
+</head>
+<body>
+     <div class="wrapper">
+        <form action="" >
+        
+            <h1>Login</h1>
+        
+            <div class ="inputbox">
+                <input type="text" placeholder="Username" id="Username" required>
+                <i class='bx bxs-user' ></i>
+            </div>
+            
+            <div class ="inputbox">
+                <input type="password" placeholder="Password" id="Password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            
+            <div class ="remembercheckbox">
+                <label>  <input type="checkbox" >Remmember me </label>
+            <a href="#" class="reed">Forget password?</a>
+            </div>
+            
+            <button type ="submit" class ="btn" onclick=" clickk()">Proceed</button>
+            
+            <div class="registerlink">
+                <p> Don't have an account <a href="register page.html" class="sr">Register</a> </p>
+            </div>
+        </form>
+      </div>
+      <footer>
+        <a href="homepage.html">back</a>
+      </footer>
+</body>
+</html>
