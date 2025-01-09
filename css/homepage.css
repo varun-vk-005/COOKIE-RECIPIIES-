@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hero {
+    min-height: 100vh;
+    background: url("acookie.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    padding-top: 0px;
+}
+
+.logo {
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 3s;
+}
+
+.logo:hover {
+    transform: translateX(20px);
+}
+
+nav ul {
+    display: flex;
+    align-items: left;
+}
+
+nav ul li {
+    margin: 20px;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-size: 15px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+nav ul li a:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+nav button {
+    background: orange;
+    border: none;
+    color: white;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: 3s; /* Corrected transition property */
+}
+
+nav button:hover {
+    transform: scale(.8); /* Added transform property */
+}
+
+.content {
+    position: absolute;
+    top: 25%;
+    left: 90px;
+}
+
+.content button {
+    background: orange;
+    border: none;
+    padding: 12px 45px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: 3s; /* Corrected transition property */
+}
+
+.content button .know_more {
+    background: transparent;
+    border: 2px solid orange;
+    color: orange;
+    margin-left: 30px;
+}
+
+.content button .know_more {
+    background: orange;
+    color: white;
+}
+
+.content button:hover{
+    background-color:green;
+    color :white ;
+}
+
+h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    font-size: 11px;
+    margin-top: 10px;
+    color: white;
+}
